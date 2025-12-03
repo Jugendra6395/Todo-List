@@ -1,0 +1,163 @@
+/* Page background wrapper */
+.todo-app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #f5f7ff, #e4ecff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 20px;
+}
+
+/* Card */
+.todo-card {
+  background: #ffffff;
+  max-width: 480px;
+  width: 100%;
+  padding: 24px 22px 28px;
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Title & subtitle */
+.todo-title {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.todo-subtitle {
+  margin: 6px 0 18px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Input row */
+.todo-input-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Input */
+.todo-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.todo-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Add button */
+.todo-add-btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  white-space: nowrap;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.35);
+}
+
+.todo-add-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.45);
+}
+
+.todo-add-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(79, 70, 229, 0.3);
+}
+
+.todo-add-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Divider */
+.todo-divider {
+  margin: 18px 0 12px;
+  border: none;
+  border-top: 1px dashed #e5e7eb;
+}
+
+/* List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+/* Empty state */
+.todo-empty {
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Individual todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.todo-item:hover {
+  background: #eef2ff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(148, 163, 184, 0.35);
+}
+
+/* Todo text */
+.todo-text {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 0.95rem;
+  color: #111827;
+  word-break: break-word;
+}
+
+/* Delete button */
+.todo-delete-btn {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(239, 68, 68, 0.08);
+  color: #b91c1c;
+  transition: background 0.12s ease, color 0.12s ease, transform 0.1s ease;
+}
+
+.todo-delete-btn:hover {
+  background: rgba(239, 68, 68, 0.14);
+  color: #991b1b;
+  transform: translateY(-0.5px);
+}
+
+.todo-delete-btn:active {
+  transform: translateY(0);
+}
