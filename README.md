@@ -1,16 +1,46 @@
-# React + Vite
+# 📝 To-Do List App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean To-Do List application built while learning React and Vite.  
+I’m using this project as part of my **“learning in public”** journey.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- Add new tasks with a smooth UI
+- Delete tasks individually
+- Each task has a unique ID using `uuid`
+- Responsive card-style layout with modern styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (with Vite)
+- **JavaScript (ES6+)**
+- **CSS**
+- **uuid** for unique IDs
+
+---
+
+## 📸 Screenshots
+<img width="1920" height="1080" alt="Screenshot 2025-12-06 121732" src="https://github.com/user-attachments/assets/e182ec27-0ee6-44d9-bc1e-9bd29e06ceaa" />
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-06 121806" src="https://github.com/user-attachments/assets/55dc2a6a-ff96-43d6-bedf-416fcadd0f23" />
+
+
+---
+
+## 💡 How to Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Jugendra6395/Todo-List.git
+
+cd Todo-List
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
